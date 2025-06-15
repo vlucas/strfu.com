@@ -28,19 +28,11 @@ export default function MarketingLayout({ title, content }: { title: string; con
         <div class="max-w-6xl mx-auto bg-white shadow-lg min-h-screen">
           <!-- Mobile header -->
           <header
-            class="lg:hidden bg-white border-b border-warm-brown/20 px-4 py-3 flex items-center justify-between"
+            class="lg:hidden bg-white border-b border-black px-4 py-3 flex items-center justify-between"
           >
-            <h1 class="text-xl font-bold text-warm-brown">Your Brand</h1>
-            <button
-              id="mobile-menu-btn"
-              class="p-2 rounded-md hover:bg-warm-beige transition-colors"
-            >
-              <svg
-                class="w-6 h-6 text-warm-brown"
-                fill="none"
-                stroke="currentColor"
-                viewBox="0 0 24 24"
-              >
+            <h1 class="text-xl font-bold"><a href="/">StrFu.com</a></h1>
+            <button id="mobile-menu-btn" class="p-2 rounded-md hover:bg-base-200 transition-colors">
+              <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                 <path
                   stroke-linecap="round"
                   stroke-linejoin="round"
@@ -54,23 +46,16 @@ export default function MarketingLayout({ title, content }: { title: string; con
           <div class="flex">
             <aside
               id="sidebar"
-              class="fixed inset-y-0 left-0 z-50 w-64 bg-gradient-to-b from-warm-beige to-stone-100 border-r border-warm-brown/20 transform -translate-x-full transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0"
+              class="fixed inset-y-0 left-0 z-50 w-64 bg-gradient-to-b from-white to-stone-100 border-r border-black transform -translate-x-full transition-transform duration-300 ease-in-out lg:translate-x-0 lg:static lg:inset-0"
             >
               <!-- Sidebar header -->
-              <div
-                class="flex items-center justify-between h-16 px-6 border-b border-warm-brown/20"
-              >
-                <h1 class="text-xl font-bold text-warm-brown">StrFu.com</h1>
+              <div class="flex items-center justify-between h-16 px-6 border-b border-black">
+                <h1 class="text-xl font-bold"><a href="/">StrFu.com</a></h1>
                 <button
                   id="close-sidebar"
-                  class="lg:hidden p-1 rounded-md hover:bg-warm-brown/10 transition-colors"
+                  class="lg:hidden p-1 rounded-md hover:bg-base-200 transition-colors"
                 >
-                  <svg
-                    class="w-5 h-5 text-warm-brown"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                  >
+                  <svg class="w-5 h-5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
                     <path
                       stroke-linecap="round"
                       stroke-linejoin="round"
